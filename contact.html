@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ARDI SAPUTRA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Ardi's Logo.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Prompt&family=Philosopher&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1>Ardi's Web</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a class="menu" href="index.html">Home</a>
+                    <a class="menu" href="about.html">About</a>
+                    <a class="menu" href="contact.html">Contact</a>
+                    <a class="menu" href="education.html">Education</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <article class="contact">
+                <h2>Contact</h2>
+                <form name="Ardi-contact-form">
+                    <input type="email" placeholder="Alamat Email" required name="email">
+                    <br>
+                    <textarea placeholder="Tulis Pesan Anda" required name="pesan"></textarea>
+                    <br>
+                    <button type="submit">Kirim</button>
+                </form>
+                <div class="address">
+                    <h3><span class="fa fa-home"></span>Address : <span>Jl. Pahlawan No. 12 Simeulue Aceh - 23891</span></h3>
+                    <h3><span class="fa fa-phone"></span>Contact : <span>0851-5831-6637</span></h3>
+                    <h3><span class="fa fa-envelope"></span>Email : <span>ardisaputraa12@gmail.com</span></h3>
+                </div>
+                <div class="media">
+                    <h3>Social Media</h3>
+                    <a href="https://web.facebook.com/ardi.syahputraa12"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.instagram.com/syahptr_12/"><span class="fa fa-instagram"></span></a>
+                    <a href="https://t.me/6281361593352"><span class="fa fa-telegram"></span></a>
+                    <a href="https://wa.me/6282274022132"><span class="fa fa-whatsapp"></span></a>
+                    <hr>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-menu copyright container">Copyright &copy; 2021 Ardi's Web</footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAsVuGQ0GYy-F_Z6Hi9TVBsc36DdUQBXYLvT6XfJ4V-vHfU3KZ4yweTnoVBaGz_lqI/exec'
+        const form = document.forms['Ardi-contact-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    form.reset();
+                    console.log('Success!', response);
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
