@@ -1,17 +1,17 @@
 body {
     /*background: linear-gradient(#bbb, #ccc, #ddd);*/
-    background: url('Images/OIP2.jfif') top repeat-x fixed, url('Images/OIP.jfif');
+    background: url('images/OIP2.jfif') top repeat-x fixed, url('images/OIP.jfif');
+    margin: 0 auto;
 }
 
 .container {
     padding: 0 15px;
-    margin: 0 auto;
     line-height: 1.5;
     font-family: 'Philosopher', sans-serif;
 }
 
 
-/* header */
+/* ============================ header ============================ */
 
 header {
     height: 70px;
@@ -21,6 +21,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 .header-left {
@@ -41,6 +42,14 @@ header {
     padding: 0 15px;
 }
 
+.icon-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
 .menu {
     font-family: 'Prompt', sans-serif;
     color: #fff;
@@ -58,25 +67,69 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.menu:active {
+    box-shadow: inset 0 0 20px #222;
+}
 
-/* main */
+
+/* ============================ main ============================ */
 
 main {
-    margin: 80px 10px 10px;
-    min-height: 525px;
+    margin-top: 80px;
+}
+
+.main-h {
+    margin-top: 70px;
 }
 
 .home-main {
+    width: 100%;
+    height: 560px;
+    background-image: url('images/Background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-main h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding-bottom: 100px;
+}
+
+.home-main h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.content {
     display: flex;
     min-height: 600px;
+    margin: 5px 20px;
 }
 
 aside {
     width: 25%;
+    max-height: 1500px;
     background: linear-gradient(#777, #888);
-    margin-right: 15px;
+    margin-right: 20px;
     padding-bottom: 20px;
-    border-radius: 5%;
+    border-radius: 20px;
+}
+
+aside a {
+    color: #000;
+}
+
+.tutorial-list a {
+    text-decoration: none;
+}
+
+.tutorial-list {
+    margin-bottom: 100px;
 }
 
 details {
@@ -88,37 +141,49 @@ time {
     font-style: italic;
 }
 
-.content {
-    width: 75%;
-    background-image: url('Images/Background.png');
-    background-size: cover;
-    text-align: center;
-    border-radius: 1%;
+.tutorial {
+    flex-grow: 3;
+    background: linear-gradient(#777, #888);
 }
 
-.content h1 {
-    text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 10px;
-    padding: 20px 0 30px;
+.tutorial h3 {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.content h2 {
-    font-size: 30px;
-    letter-spacing: 5px;
+.tutorial iframe {
+    width: 80%;
+    display: block;
+    margin: 0 auto 60px;
+    height: 400px;
+}
+
+iframe {
+    border-radius: 25px;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px;
+}
+
+.up img {
+    border-radius: 100%;
+    width: 50px;
 }
 
 
-/* menu */
+/* ============================ menu ============================ */
 
 .about,
 .contact,
-.education {
-    padding-top: 5px;
-    padding-bottom: 70px;
+.education,
+.gallery {
+    min-height: 460px;
+    padding: 5px 0 10px;
     margin: 0 80px;
     background: linear-gradient(#999, #222);
-    border-radius: 10% 1%;
+    border-radius: 100px 12px;
 }
 
 .profile,
@@ -132,7 +197,9 @@ time {
 
 .about h2,
 .contact h2,
-.education h2 {
+.education h2,
+.gallery h2,
+.tutorial h2 {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -146,39 +213,54 @@ time {
 
 .about-greet {
     text-align: justify;
-    padding: 60px 550px 5px 100px;
+    padding: 60px 520px 5px 100px;
 }
 
 .regards {
     font-style: italic;
-    line-height: 5px;
-    padding-left: 100px;
 }
 
 .about hr,
 .contact hr,
-.education hr {
+.education hr,
+.gallery hr {
     margin-top: 100px;
     border: 2px solid #000;
     width: 85%;
+    border-radius: 100%;
+}
+
+.motivation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.motivation iframe {
+    width: 60%;
+    height: 350px;
+    border: none;
 }
 
 
-/* form */
+/* ============================ form ============================ */
 
 form {
-    padding: 20px 0 40px 0;
+    width: 80%;
+    padding: 20px 0 40px;
     text-align: center;
     border: 1px solid #000;
     border-radius: 10px;
-    margin: 0 100px 60px;
+    margin: 0 auto 60px;
 }
 
 input,
 textarea {
-    width: 600px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    width: 70%;
+    margin: 15px 0;
     padding: 20px;
     font-size: 18px;
     border: 0px;
@@ -213,10 +295,15 @@ button:active {
 }
 
 
-/* coontact */
+/* ============================ contact ============================ */
 
 .address {
     text-align: center;
+}
+
+.address a {
+    color: #000;
+    text-decoration: none;
 }
 
 .media {
@@ -244,7 +331,108 @@ button:active {
 }
 
 
-/* education */
+/* ============================ gallery ============================ */
+
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    margin: 0 70px;
+}
+
+.language a img {
+    width: 225px;
+    height: 250px;
+    border-radius: 25%;
+    margin: 25px;
+    box-shadow: 7px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.language a img:hover {
+    position: relative;
+    bottom: 12px;
+}
+
+.language a img:active {
+    box-shadow: none;
+    position: relative;
+    left: 7px;
+    top: 3px;
+}
+
+.language h2 {
+    margin-top: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.layer {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 9;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer:target {
+    width: 80%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.layer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    margin: 0 auto;
+}
+
+.layer:target img {
+    animation: img-show 1s;
+}
+
+.layer p {
+    color: #fff;
+    padding: 40px 180px 0;
+}
+
+.close {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px 0 30px;
+    background-color: #f00;
+}
+
+
+/* ============================ animation ============================ */
+
+@keyframes img-show {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* ============================ education ============================ */
 
 .education ul {
     padding-top: 40px;
@@ -257,16 +445,19 @@ button:active {
 }
 
 
-/* footer */
+/* ============================ footer ============================ */
 
 .footer-home {
     height: 150px;
     background: linear-gradient(#aaa, #222);
+    border-radius: 20px 20px 0 0;
 }
 
 .footer-menu {
     background-color: #222;
     border: none;
+    border-radius: 20px 20px 0 0;
+    margin-top: 10px;
 }
 
 .footer-right {
