@@ -1,0 +1,335 @@
+    /* tablet */
+    
+    @media all and (max-width: 1000px) {
+        /* ============================ main ============================ */
+        .home-main h1 {
+            font-size: 45px;
+        }
+        .home-main h2 {
+            font-size: 25px;
+        }
+        .content {
+            flex-direction: column;
+        }
+        aside {
+            width: 100%;
+            min-height: 400px;
+            margin-right: 0;
+            border-radius: 0;
+        }
+        .tutorial-list {
+            margin-bottom: 50px;
+        }
+        .up {
+            margin: 30px 0 10px;
+        }
+        .up img {
+            width: 40px;
+        }
+        /* ============================ menu ============================ */
+        .about,
+        .contact,
+        .education,
+        .gallery {
+            margin: 0 50px;
+            border-radius: 20px;
+            padding: 5px 40px 10px;
+        }
+        .profile,
+        .im-education {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            float: none;
+        }
+        .about-intro {
+            text-align: center;
+            padding: 0;
+        }
+        .about-greet {
+            text-align: center;
+            padding: 50px 0 0 0;
+        }
+        .motivation iframe {
+            width: 90%;
+            height: 300px;
+        }
+        /* ============================ form ============================ */
+        form {
+            width: 95%;
+        }
+        input,
+        textarea {
+            font-size: 14px;
+        }
+        button {
+            padding: 7px 40px;
+            font-size: 18px;
+        }
+        /* ============================ gallery ============================ */
+        .language {
+            margin: 0;
+        }
+        .language a img {
+            width: 180px;
+            height: 200px;
+            margin: 20px;
+        }
+        .layer img {
+            width: 120px;
+            height: 120px;
+        }
+        .layer p {
+            padding: 40px 80px 0;
+        }
+        /* ============================ education ============================ */
+        .education ul {
+            padding: 0;
+            margin: 0;
+        }
+        .education li {
+            padding: 0 50px 10px;
+            list-style: none;
+            font-size: 17px;
+        }
+        /* ============================ footer ============================ */
+        .footer-home {
+            height: 120px;
+        }
+        .footer-right {
+            padding: 5px 0 10px;
+        }
+        .footer-right p {
+            font-size: 14px;
+        }
+        .copyright {
+            font-size: 10px;
+            padding: 7px 0;
+        }
+    }
+    /* smartphone */
+    
+    @media all and (max-width: 670px) {
+        /* ============================ header ============================ */
+        header {
+            height: 50px;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-left {
+            padding: 0;
+            float: none;
+        }
+        .header-left h1 {
+            line-height: 48.5px;
+            font-size: 24px;
+        }
+        .header-right {
+            padding: 0;
+            float: none;
+        }
+        .icon-menu {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            line-height: 48.5px;
+            font-family: 'Prompt', sans-serif;
+        }
+        nav {
+            display: none;
+        }
+        nav:target {
+            display: block;
+        }
+        .menu {
+            padding: 0;
+            float: none;
+            display: block;
+            line-height: 50px;
+            text-align: center;
+            background: linear-gradient(#000, #333);
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+        }
+        .menu:hover {
+            font-weight: bold;
+            text-decoration: underline;
+            color: rgb(35, 171, 240);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .menu:active {
+            box-shadow: inset 0 0 20px #222;
+        }
+        .close-menu {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            line-height: 30px;
+            font-family: 'Prompt', sans-serif;
+            text-align: center;
+            background-color: #f00;
+            margin-top: 10px;
+        }
+        /* ============================ main ============================ */
+        main {
+            margin-top: 60px;
+        }
+        .main-h {
+            margin-top: 50px;
+        }
+        .home-main {
+            height: 200px;
+        }
+        .home-main h1 {
+            font-size: 28px;
+            padding-bottom: 0;
+            letter-spacing: 6px;
+            opacity: 0.8;
+        }
+        .home-main h2 {
+            display: none;
+        }
+        .content {
+            margin: 5px 10px;
+        }
+        details {
+            font-size: 14px;
+        }
+        .tutorial h3 {
+            font-size: 14px;
+        }
+        .tutorial iframe {
+            width: 85%;
+            height: 150px;
+        }
+        iframe {
+            border-radius: 15px;
+        }
+        .up {
+            margin: 20px 0 10px;
+        }
+        .up img {
+            width: 30px;
+        }
+        /* ============================ menu ============================ */
+        .about,
+        .contact,
+        .education,
+        .gallery {
+            padding: 5px 20px 10px;
+            margin: 0;
+            border-radius: 15px;
+        }
+        .profile,
+        .im-education {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+            padding: 0;
+            float: none;
+        }
+        .about h2,
+        .contact h2,
+        .education h2,
+        .gallery h2,
+        .tutorial h2 {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .about-intro {
+            padding: 0;
+            font-size: 14px;
+        }
+        .about-greet {
+            padding: 20px 0 0 0;
+            font-size: 14px;
+        }
+        .motivation {
+            margin-top: 10px;
+        }
+        .motivation h3 {
+            font-size: 16px;
+        }
+        .motivation iframe {
+            width: 90%;
+            height: 150px;
+        }
+        .about hr,
+        .contact hr,
+        .education hr,
+        .gallery hr {
+            margin-top: 60px;
+        }
+        /* ============================ form ============================ */
+        form {
+            margin: 0 auto 40px;
+        }
+        input,
+        textarea {
+            font-size: 12px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        button {
+            padding: 5px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        .contact h3 {
+            font-size: 14px;
+        }
+        /* ============================ gallery ============================ */
+        .language a img {
+            width: 150px;
+            height: 170px;
+            margin: 15px;
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 20%;
+        }
+        .language a img:active {
+            left: 5px;
+            top: 10px;
+        }
+        .language h2 {
+            font-size: 20px;
+        }
+        .layer {
+            top: 50px;
+        }
+        .layer:target {
+            width: 100%;
+        }
+        .layer p {
+            padding: 20px 10px 0;
+            font-size: 14px;
+        }
+        .close {
+            font-size: 16px;
+        }
+        /* ============================ education ============================ */
+        .education li {
+            padding: 0 0 10px 0;
+            font-size: 14px;
+        }
+        /* ============================ footer ============================ */
+        .footer-home {
+            height: 80px;
+            border-radius: 15px 15px 0 0;
+        }
+        .footer-menu {
+            border-radius: 15px 15px 0 0;
+        }
+        .footer-right {
+            padding: 5px 0;
+        }
+        .footer-right p {
+            font-size: 9px;
+        }
+        .copyright {
+            font-size: 8px;
+            padding: 5px 0;
+        }
+    }
