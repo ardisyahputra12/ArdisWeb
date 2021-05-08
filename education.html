@@ -5,8 +5,9 @@
     <title>ARDI SAPUTRA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="stylesheet.css" rel="stylesheet">
-    <link rel="shortcut icon" href="Images/Ardi's Logo.jpeg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/Ardi's Logo.jpeg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Prompt&family=Philosopher&display=swap" rel="stylesheet">
@@ -18,21 +19,23 @@
             <div class="header-left">
                 <h1>Ardi's Web</h1>
             </div>
-            <div class="header-right">
-                <nav>
-                    <a class="menu" href="index.html">Home</a>
-                    <a class="menu" href="about.html">About</a>
-                    <a class="menu" href="contact.html">Contact</a>
-                    <a class="menu" href="education.html">Education</a>
-                </nav>
-            </div>
+            <a class="icon-menu" href="#nav">Menu</a>
         </div>
+        <nav id="nav" class="header-right">
+            <a class="menu" href="index.html">Home</a>
+            <a class="menu" href="about.html">About</a>
+            <a class="menu" href="contact.html">Contact</a>
+            <a class="menu" href="gallery.html">Gallery</a>
+            <a class="menu" href="education.html">Education</a>
+            <a class="close-menu" href="#">-- Close --</a>
+        </nav>
     </header>
     <main>
         <section class="container">
             <article class="education">
+                <audio src="./audio/mixkit-fast-small-sweep-transition-166.wav" autoplay></audio>
                 <h2>Education</h2>
-                <img class="im-education" src="Images/Education.png" alt="Education">
+                <img class="im-education" src="images/Education.png" alt="Education">
                 <ul>
                     <li>2007 - 2008 : TK Pertiwi Sinabang, Simeulue - Aceh</li>
                     <li>2008 - 2014 : SD Negeri 8 Simeulue Timur, Simeulue - Aceh</li>
@@ -41,6 +44,7 @@
                     <li>2020 - Sekarang : Pendidikan S1 Teknik Informatika di STMIK Mikroskil, Medan - Sumatera Utara</li>
                 </ul>
                 <hr>
+                <a href="#" title="Back to Up" class="up"><img src="./images/Arrow Up.jfif" alt="Arrow Up"></a>
             </article>
         </section>
     </main>
