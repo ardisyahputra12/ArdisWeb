@@ -5,8 +5,9 @@
     <title>ARDI SAPUTRA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="stylesheet.css" rel="stylesheet">
-    <link rel="shortcut icon" href="Images/Ardi's Logo.jpeg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/Ardi's Logo.jpeg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Prompt&family=Philosopher&display=swap" rel="stylesheet">
@@ -18,48 +19,91 @@
             <div class="header-left">
                 <h1>Ardi's Web</h1>
             </div>
-            <div class="header-right">
-                <nav>
-                    <a class="menu" href="index.html">Home</a>
-                    <a class="menu" href="about.html">About</a>
-                    <a class="menu" href="contact.html">Contact</a>
-                    <a class="menu" href="education.html">Education</a>
-                </nav>
-            </div>
+            <a class="icon-menu" href="#nav">Menu</a>
         </div>
+        <nav id="nav" class="header-right">
+            <a class="menu" href="index.html">Home</a>
+            <a class="menu" href="about.html">About</a>
+            <a class="menu" href="contact.html">Contact</a>
+            <a class="menu" href="gallery.html">Gallery</a>
+            <a class="menu" href="education.html">Education</a>
+            <a class="close-menu" href="#">-- Close --</a>
+        </nav>
     </header>
-    <main class="home-main">
-        <aside>
-            <section class="container">
-                <article>
-                    <h1>Artikel Terbaru</h1>
-                    <details>
-                        <summary>Artikel 1</summary>
-                        <h4><a href="#">How to make layout using CSS</a></h4>
-                        <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
-                        <time>Posted Sunday, March 21, 2021 by Ardi Saputra</time>
-                    </details>
-                    <details>
-                        <summary>Artikel 2</summary>
-                        <h4><a href="#">How to make style using CSS</a></h4>
-                        <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
-                        <time>Posted Monday, March 8, 2021 by Ardi Saputra</time>
-                    </details>
-                    <details>
-                        <summary>Artikel 3</summary>
-                        <h4><a href="#">Learning HTML fundamentals</a></h4>
-                        <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
-                        <time>Posted Friday, February 19, 2021 by Ardi Saputra</time>
-                    </details>
-                </article>
-            </section>
-        </aside>
-        <section class="content">
+    <main class="main-h">
+        <audio src="./audio/mixkit-retro-game-notification-212.wav" autoplay></audio>
+        <section class="home-main">
             <article class="container">
                 <h1>selamat datang</h1>
                 <h2>Hai, Saya Ardi<br>Mahasiswa jurusan Teknik Informatika</h2>
             </article>
         </section>
+        <div class="content">
+            <aside>
+                <section class="container">
+                    <article class="tutorial-list">
+                        <h1>Tutorial</h1>
+                        <details>
+                            <summary><a href="#T-1" title="Tonton">Belajar HTML & CSS untuk PEMULA - Full Lengkap</a></summary>
+                            <p><a href="https://www.youtube.com/channel/UC4RphDrAUU7ainf6WVco-7Q" title="Kunjungi">by Aden Rahmandi</a></p>
+                        </details>
+                        <details>
+                            <summary><a href="#T-2" title="Tonton">CSS Layouting - #7 Box Model : Membuat Website Sederhana</a></summary>
+                            <p><a href="https://www.youtube.com/channel/UCkXmLjEr95LVtGuIm3l2dPg" title="Kunjungi">by Web Programming UNPAS</a></p>
+                        </details>
+                        <details>
+                            <summary><a href="#T-3" title="Tonton">Cara membuat halaman website dengan html dan css | tutorial website</a></summary>
+                            <p><a href="https://www.youtube.com/channel/UC4KUEDrVyI8BDUTIShwsW0w" title="Kunjungi">by Mahe Tutorial</a></p>
+                        </details>
+                        <details>
+                            <summary><a href="#T-4" title="Tonton">Membuat form login dengan HTML dan CSS</a></summary>
+                            <p><a href="https://www.youtube.com/channel/UCMlo-YbHqPYPGiFn_BNB2Ug" title="Kunjungi">by Sarjana IT</a></p>
+                        </details>
+                        <details>
+                            <summary><a href="#T-5" title="Tonton">One Page Full Website Project For Practice | HTML & CSS Responsive Website | Web Cifar 2021</a></summary>
+                            <p><a href="https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ" title="Kunjungi">by WEB CIFAR</a></p>
+                        </details>
+                    </article>
+                    <article class="article">
+                        <h1>Artikel Terbaru</h1>
+                        <details>
+                            <summary>Artikel 1</summary>
+                            <h4><a href="#" title="Lanjut Membaca">How to make layout using CSS</a></h4>
+                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
+                            <time>Posted Sunday, March 21, 2021 by Ardi Saputra</time>
+                        </details>
+                        <details>
+                            <summary>Artikel 2</summary>
+                            <h4><a href="#" title="Lanjut Membaca">How to make style using CSS</a></h4>
+                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
+                            <time>Posted Monday, March 8, 2021 by Ardi Saputra</time>
+                        </details>
+                        <details>
+                            <summary>Artikel 3</summary>
+                            <h4><a href="#" title="Lanjut Membaca">Learning HTML fundamentals</a></h4>
+                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ....</p>
+                            <time>Posted Friday, February 19, 2021 by Ardi Saputra</time>
+                        </details>
+                    </article>
+                </section>
+            </aside>
+            <section class="tutorial">
+                <article class="container">
+                    <h2>Tutorial</h2>
+                    <h3 id="T-1">Belajar HTML & CSS untuk PEMULA - Full Lengkap</h3>
+                    <iframe src="https://www.youtube.com/embed/3U1AhjEf7DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 id="T-2">CSS Layouting - #7 Box Model : Membuat Website Sederhana</h3>
+                    <iframe src="https://www.youtube.com/embed/LZhsmkbrY_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 id="T-3">Cara membuat halaman website dengan html dan css | tutorial website</h3>
+                    <iframe src="https://www.youtube.com/embed/llYCfKgjjWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <h3 id="T-4">Membuat form login dengan HTML dan CSS</h3>
+                    <iframe src="https://www.youtube.com/embed/SffzeD5vnys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 id="T-5">One Page Full Website Project For Practice | HTML & CSS Responsive Website | Web Cifar 2021</h3>
+                    <iframe src="https://www.youtube.com/embed/ZFQkb26UD1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" title="Back to Up" class="up"><img src="./images/Arrow Up.jfif" alt="Arrow Up"></a>
+                </article>
+            </section>
+        </div>
     </main>
     <footer class="footer-home">
         <div class="container">
