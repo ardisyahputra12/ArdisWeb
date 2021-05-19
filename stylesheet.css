@@ -1,486 +1,117 @@
-body {
-    /*background: linear-gradient(#bbb, #ccc, #ddd);*/
-    background: url('images/OIP2.jfif') top repeat-x fixed, url('images/OIP.jfif');
-    margin: 0 auto;
-}
-
-.container {
-    padding: 0 15px;
-    line-height: 1.5;
-    font-family: 'Philosopher', sans-serif;
-}
-
-
-/* ============================ header ============================ */
-
-header {
-    height: 70px;
-    background: linear-gradient(#000, #333);
-    opacity: 0.8;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.header-left {
-    float: left;
-    padding: 0 30px;
-}
-
-.header-left h1 {
-    font-family: 'Lobster', cursive;
-    word-spacing: 8px;
-    color: rgb(172, 218, 241);
-    display: inline;
-    line-height: 68.5px;
-}
-
-.header-right {
-    float: right;
-    padding: 0 15px;
-}
-
-.icon-menu {
-    display: none;
-}
-
-.close-menu {
-    display: none;
-}
-
-.menu {
-    font-family: 'Prompt', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    padding: 0 15px;
-    float: left;
-    display: block;
-    line-height: 68.5px;
-}
-
-.menu:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(35, 171, 240);
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.menu:active {
-    box-shadow: inset 0 0 20px #222;
-}
-
-
-/* ============================ main ============================ */
-
-main {
-    margin-top: 80px;
-}
-
-.main-h {
-    margin-top: 70px;
-}
-
-.home-main {
-    width: 100%;
-    height: 560px;
-    background-image: url('images/Background.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.home-main h1 {
-    text-transform: uppercase;
-    font-size: 50px;
-    letter-spacing: 10px;
-    padding-bottom: 100px;
-}
-
-.home-main h2 {
-    font-size: 30px;
-    letter-spacing: 5px;
-}
-
-.content {
-    display: flex;
-    min-height: 600px;
-    margin: 5px 20px;
-}
-
-aside {
-    width: 25%;
-    max-height: 1500px;
-    background: linear-gradient(#777, #888);
-    margin-right: 20px;
-    padding-bottom: 20px;
-    border-radius: 20px;
-}
-
-aside a {
-    color: #000;
-}
-
-.tutorial-list a {
-    text-decoration: none;
-}
-
-.tutorial-list {
-    margin-bottom: 100px;
-}
-
-details {
-    margin: 10px;
-}
-
-time {
-    font-size: small;
-    font-style: italic;
-}
-
-.tutorial {
-    flex-grow: 3;
-    background: linear-gradient(#777, #888);
-}
-
-.tutorial h3 {
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.tutorial iframe {
-    width: 80%;
-    display: block;
-    margin: 0 auto 60px;
-    height: 400px;
-}
-
-iframe {
-    border-radius: 25px;
-}
-
-.up {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0 10px;
-}
-
-.up img {
-    border-radius: 100%;
-    width: 50px;
-}
-
-
-/* ============================ menu ============================ */
-
-.about,
-.contact,
-.education,
-.gallery {
-    min-height: 460px;
-    padding: 5px 0 10px;
-    margin: 0 80px;
-    background: linear-gradient(#999, #222);
-    border-radius: 100px 12px;
-}
-
-.profile,
-.im-education {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    float: left;
-    padding: 0 100px;
-}
-
-.about h2,
-.contact h2,
-.education h2,
-.gallery h2,
-.tutorial h2 {
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    padding-bottom: 25px;
-}
-
-.about-intro {
-    text-align: justify;
-    padding-right: 170px;
-}
-
-.about-greet {
-    text-align: justify;
-    padding: 60px 520px 5px 100px;
-}
-
-.regards {
-    font-style: italic;
-}
-
-.about hr,
-.contact hr,
-.education hr,
-.gallery hr {
-    margin-top: 100px;
-    border: 2px solid #000;
-    width: 85%;
-    border-radius: 100%;
-}
-
-.motivation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.motivation iframe {
-    width: 60%;
-    height: 350px;
-    border: none;
-}
-
-
-/* ============================ form ============================ */
-
-form {
-    width: 80%;
-    padding: 20px 0 40px;
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin: 0 auto 60px;
-}
-
-input,
-textarea {
-    width: 70%;
-    margin: 15px 0;
-    padding: 20px;
-    font-size: 18px;
-    border: 0px;
-    background-color: #ffffff;
-    border-radius: 15px;
-}
-
-::placeholder {
-    font-family: "Avenir Next";
-    color: #7C7D83;
-}
-
-button {
-    padding: 10px 60px;
-    background-color: #11dd0a;
-    color: #4f4f4f;
-    font-size: 22px;
-    cursor: pointer;
-    box-shadow: 0 7px #178813;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-button:active {
-    box-shadow: none;
-    position: relative;
-    top: 7px;
-}
-
-
-/* ============================ contact ============================ */
-
-.address {
-    text-align: center;
-}
-
-.address a {
-    color: #000;
-    text-decoration: none;
-}
-
-.media {
-    text-align: center;
-}
-
-.media h3 {
-    margin-bottom: 5px;
-}
-
-.fa-facebook {
-    color: rgb(0, 0, 255);
-}
-
-.fa-instagram {
-    color: rgb(206, 8, 173);
-}
-
-.fa-telegram {
-    color: rgb(8, 145, 209);
-}
-
-.fa-whatsapp {
-    color: rgb(17, 255, 9);
-}
-
-
-/* ============================ gallery ============================ */
-
-.language {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    margin: 0 70px;
-}
-
-.language a img {
-    width: 225px;
-    height: 250px;
-    border-radius: 25%;
-    margin: 25px;
-    box-shadow: 7px 15px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.language a img:hover {
-    position: relative;
-    bottom: 12px;
-}
-
-.language a img:active {
-    box-shadow: none;
-    position: relative;
-    left: 7px;
-    top: 3px;
-}
-
-.language h2 {
-    margin-top: 0;
-    text-decoration: none;
-    color: #000;
-}
-
-.layer {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.0);
-    z-index: 9;
-    transition: 1s;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.layer:target {
-    width: 80%;
-    height: auto;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.layer img {
-    width: 200px;
-    height: 200px;
-    border-radius: 25%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-    margin: 0 auto;
-}
-
-.layer:target img {
-    animation: img-show 1s;
-}
-
-.layer p {
-    color: #fff;
-    padding: 40px 180px 0;
-}
-
-.close {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    margin: 5px 0 30px;
-    background-color: #f00;
-}
-
-
-/* ============================ animation ============================ */
-
-@keyframes img-show {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-/* ============================ education ============================ */
-
-.education ul {
-    padding-top: 40px;
-    margin-right: 70px;
-}
-
-.education li {
-    list-style: none;
-    font-size: larger;
-}
-
-
-/* ============================ footer ============================ */
-
-.footer-home {
-    height: 150px;
-    background: linear-gradient(#aaa, #222);
-    border-radius: 20px 20px 0 0;
-}
-
-.footer-menu {
-    background-color: #222;
-    border: none;
-    border-radius: 20px 20px 0 0;
-    margin-top: 10px;
-}
-
-.footer-right {
-    padding: 5px 0 20px 780px;
-}
-
-.footer-right p {
-    line-height: 3px;
-    font-family: 'Prompt', sans-serif;
-}
-
-.footer-right span {
-    padding-left: 15px;
-}
-
-.fa {
-    padding-right: 10px;
-}
-
-.copyright {
-    font-size: smaller;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid rgb(173, 173, 173);
-    color: #fff;
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARDI SAPUTRA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/Ardi's Logo.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Prompt&family=Philosopher&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1>Ardi's Web</h1>
+            </div>
+            <a class="icon-menu" href="#nav">Menu</a>
+        </div>
+        <nav id="nav" class="header-right">
+            <a class="menu" href="index.html">Home</a>
+            <a class="menu" href="about.html">About</a>
+            <a class="menu" href="contact.html">Contact</a>
+            <a class="menu" href="gallery.html">Gallery</a>
+            <a class="menu" href="education.html">Education</a>
+            <a class="close-menu" href="#">-- Close --</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <article class="gallery">
+                <audio src="./audio/mixkit-fast-small-sweep-transition-166.wav" autoplay></audio>
+                <h2>Gallery</h2>
+                <div class="language">
+                    <article>
+                        <a href="#L-HTML" title="Baca penjelasannya"><img src="./images/HTML.jfif" alt="HTML"></a>
+                        <h2>HTML</h2>
+
+                        <div class="layer" id="L-HTML">
+                            <a href="#" class="close">x close</a>
+                            <img src="./images/HTML.jfif" alt="HTML">
+                            <p>HTML (Hyper Text Markup Language) merupakan bahasa standar untuk membuat suatu dokumen HTML (halaman web) yang terdiri dari kode-kode singkat tertentu, dimana dengan kode-kode tersebut akan memerintahkan Web browser bagaimana
+                                untuk menampilkan halaman Web yang terdiri dari berbagai macam format file seperti teks, grafik, animasi, link maupun audio-video.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#L-CSS" title="Baca penjelasannya"><img src="./images/CSS.jfif" alt="CSS"></a>
+                        <h2>CSS</h2>
+
+                        <div class="layer" id="L-CSS">
+                            <a href="#" class="close">x close</a>
+                            <img src="./images/CSS.jfif" alt="CSS">
+                            <p>CSS (Cascading Style Sheet) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web, sehingga akan lebih terstruktur dan seragam. CSS menangani tampilan dan ‘rasa’ dari halaman website. Pada umumnya CSS dipakai untuk
+                                memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#L-JS" title="Baca penjelasannya"><img src="./images/JS.jfif" alt="JS"></a>
+                        <h2>JavaScript</h2>
+
+                        <div class="layer" id="L-JS">
+                            <a href="#" class="close">x close</a>
+                            <img src="./images/JS.jfif" alt="JS">
+                            <p>JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag
+                                SCRIPT. JavaScript merupakan salah satu teknologi inti World Wide Web selain HTML dan CSS. JavaScript membantu membuat halaman web menjadi interaktif dan merupakan bagian aplikasi web yang esensial.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#L-Python" title="Baca penjelasannya"><img src="./images/Python.jfif" alt="Python"></a>
+                        <h2>Python</h2>
+
+                        <div class="layer" id="L-Python">
+                            <a href="#" class="close">x close</a>
+                            <img src="./images/Python.jfif" alt="Python">
+                            <p>Python adalah bahasa pemrograman tingkat tinggi (high-level programming language), berjalan dengan sistem interpreted, dan bisa dipakai untuk berbagai jenis tujuan (general-purpose). Sebutan bahasa pemrograman tingkat tinggi
+                                merujuk level kedekatan sebuah bahasa pemrograman ke kode-kode listrik yang dipakai komputer. Filosofi desain Python menekankan keterbacaan kode dengan penggunaan spasi putih yang signifikan. Konstruksi bahasanya dan pendekatan
+                                berorientasi objek bertujuan untuk membantu programmer menulis kode yang jelas dan logis untuk proyek skala kecil dan besar.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#L-C" title="Baca penjelasannya"><img src="./images/C.jfif" alt="C"></a>
+                        <h2>C</h2>
+
+                        <div class="layer" id="L-C">
+                            <a href="#" class="close">x close</a>
+                            <img src="./images/C.jfif" alt="C">
+                            <p>Bahasa Pemrograman C adalah sebuah bahasa pemrograman komputer yang bisa digunakan untuk membuat berbagai aplikasi (general-purpose programming language), mulai dari sistem operasi (seperti Windows atau Linux), antivirus, software
+                                pengolah gambar (image processing), hingga compiler untuk bahasa pemrograman, dimana C banyak digunakan untuk membuat bahasa pemrograman lain yang salah satunya adalah PHP. Bahasa C termasuk sebagai bahasa yang terstruktur
+                                sehingga program dapat lebih mudah dipahami atau dikembangkan.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#L-Node-JS" title="Baca penjelasannya"><img src="./images/Node JS.jfif" alt="Node JS"></a>
+                        <h2>Node JS</h2>
+
+                        <div class="layer" id="L-Node-JS">
+                            <a href="" class="close">x close</a>
+                            <img src="./images/Node JS.jfif" alt="Node JS">
+                            <p>Node.js adalah platform yang dibangun di environment runtime JavaScript milik Chrome yang digunakan untuk membuat aplikasi web yang cepat dan scalable. Node.js memiliki pustaka peladen HTTP sendiri sehingga memungkinkan untuk
+                                menjalankan peladen web tanpa menggunakan program peladen web seperti Apache atau Lighttpd. Node Js merupakan solusi cerdas pengembangan apps. Pasalnya, inovasi ini memungkinkan developer hanya perlu menguasai satu bahasa
+                                pemrograman saja untuk mengerjakan urusan frontend dan backend, yaitu JavaScript.</p>
+                        </div>
+                    </article>
+                </div>
+                <hr>
+                <a href="#" title="Back to Up" class="up"><img src="./images/Arrow Up.jfif" alt="Arrow Up"></a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-menu copyright container">Copyright &copy; 2021 Ardi's Web</footer>
+</body>
+
+</html>
